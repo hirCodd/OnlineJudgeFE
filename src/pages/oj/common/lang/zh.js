@@ -16,6 +16,15 @@ export const m = {
   Score: '分数',
   Tags: '标签',
   Show: '显示',
+  Right_Column_Problems: '问题',
+  Right_Column_Announcements: '公告',
+  Right_Column_Submissions: '提交',
+  Right_Column_Rankings: 'Rankings',
+  View_Contest: '查看考试',
+  Submitted_Successfully: '提交成功',
+  SolvedProblem: '您已经解决了这个问题',
+  SubmittedSolution: '已经提交了解题方案',
+  ContestEnded: '考试已经截止',
   // About.vue
   Result_Explanation: '结果解释',
   Pending_Juding: '您的解答将很快被测评，请等待结果。',
@@ -101,5 +110,7 @@ export const m = {
   UserHomeserSubmissions: '提交次数',
   UserHomeScore: '分数',
   List_Solved_Problems: '已解决问题的列表',
-  UserHomeIntro: '这个家伙太懒了，还没有做题呢...'
+  UserHomeIntro: '这个家伙太懒了，还没有做题呢...',
+  // ACMContestRank.vue
+  Export_Source_Data: '导出数据'
 }

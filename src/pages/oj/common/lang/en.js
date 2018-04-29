@@ -16,6 +16,15 @@ export const m = {
   Score: 'Score',
   Tags: 'Tags',
   Show: 'Show',
+  Right_Column_Problems: 'Problems',
+  Right_Column_Announcements: 'Announcements',
+  Right_Column_Submissions: 'Submissions',
+  Right_Column_Rankings: 'Rankings',
+  View_Contest: 'View Contest',
+  Submitted_Successfully: 'Submitted successfully',
+  SolvedProblem: 'You have solved the problem',
+  SubmittedSolution: 'You have submitted a solution.',
+  ContestEnded: 'Contest has ended',
   // About.vue
   Result_Explanation: 'Result Explanation',
   Pending_Juding: 'You solution will be judged soon, please wait for result.',
@@ -101,5 +110,7 @@ export const m = {
   UserHomeserSubmissions: 'Submissions',
   UserHomeScore: 'Score',
   List_Solved_Problems: 'List of solved problems',
-  UserHomeIntro: 'The guy is so lazy that has not solved any problem yet.'
+  UserHomeIntro: 'The guy is so lazy that has not solved any problem yet.',
+  // ACMContestRank.vue
+  Export_Source_Data: 'Export Source Data'
 }

@@ -62,17 +62,17 @@
               </Tag>
             </template>
             <template v-else-if="this.contestID && !OIContestRealTimePermission">
-              <Alert type="success" show-icon>Submitted successfully</Alert>
+              <Alert type="success" show-icon>{{$t('m.Submitted_Successfully')}}</Alert>
             </template>
           </div>
           <div v-else-if="problem.my_status === 0">
-            <Alert type="success" show-icon>You have solved the problem</Alert>
+            <Alert type="success" show-icon>{{$t('m.SolvedProblem')}}</Alert>
           </div>
           <div v-else-if="this.contestID && !OIContestRealTimePermission && submissionExists">
-            <Alert type="success" show-icon>You have submitted a solution.</Alert>
+            <Alert type="success" show-icon>{{$t('m.SubmittedSolution')}}</Alert>
           </div>
           <div v-if="contestEnded">
-            <Alert type="warning" show-icon>Contest has ended</Alert>
+            <Alert type="warning" show-icon>{{$t('m.ContestEnded')}}</Alert>
           </div>
           </Col>
 
@@ -100,29 +100,29 @@
         <template v-if="this.contestID">
           <VerticalMenu-item :route="{name: 'contest-problem-list', params: {contestID: contestID}}">
             <Icon type="ios-photos"></Icon>
-            Problems
+            {{$t('m.Right_Column_Problems')}}
           </VerticalMenu-item>
 
           <VerticalMenu-item :route="{name: 'contest-announcement-list', params: {contestID: contestID}}">
             <Icon type="chatbubble-working"></Icon>
-            Announcements
+            {{$t('m.Right_Column_Announcements')}}
           </VerticalMenu-item>
         </template>
 
         <VerticalMenu-item v-if="!this.contestID || OIContestRealTimePermission" :route="submissionRoute">
           <Icon type="navicon-round"></Icon>
-          Submissions
+          {{$t('m.Right_Column_Submissions')}}
         </VerticalMenu-item>
 
         <template v-if="this.contestID">
           <VerticalMenu-item v-if="!this.contestID || OIContestRealTimePermission"
                              :route="{name: 'contest-rank', params: {contestID: contestID}}">
             <Icon type="stats-bars"></Icon>
-            Rankings
+            {{$t('m.Right_Column_Rankings')}}
           </VerticalMenu-item>
           <VerticalMenu-item :route="{name: 'contest-details', params: {contestID: contestID}}">
             <Icon type="home"></Icon>
-            View Contest
+            {{$t('m.View_Contest')}}
           </VerticalMenu-item>
         </template>
       </VerticalMenu>
