@@ -95,7 +95,7 @@
             }
           },
           {
-            title: 'AC / Total',
+            title: 'AC/Total',
             align: 'center',
             width: 100,
             render: (h, params) => {
@@ -125,7 +125,7 @@
         dataRank: [],
         options: {
           title: {
-            text: 'Top 10 Teams',
+            text: 'Top 10',
             left: 'center'
           },
           dataZoom: [
@@ -275,7 +275,7 @@
         problems.forEach(problem => {
           this.columns.push({
             align: 'center',
-            key: problem.id,
+            key: problem._id,
             renderHeader: (h, params) => {
               return h('a', {
                 'class': {

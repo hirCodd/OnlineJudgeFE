@@ -106,7 +106,7 @@
         dataRank: [],
         options: {
           title: {
-            text: 'Top 10 Teams',
+            text: 'Top 10',
             left: 'center'
           },
           tooltip: {
@@ -208,7 +208,7 @@
         problems.forEach(problem => {
           this.columns.push({
             align: 'center',
-            key: problem.id,
+            key: problem._id,
             renderHeader: (h, params) => {
               return h('a', {
                 'class': {
