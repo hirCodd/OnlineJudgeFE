@@ -228,7 +228,7 @@
               }, problem._id)
             },
             render: (h, params) => {
-              return h('span', params.row[problem._id])
+              return h('span', params.row[problem.id])
             }
           })
         })

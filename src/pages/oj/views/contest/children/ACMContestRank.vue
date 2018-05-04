@@ -295,8 +295,8 @@
               }, problem._id)
             },
             render: (h, params) => {
-              if (params.row[problem._id]) {
-                let status = params.row[problem._id]
+              if (params.row[problem.id]) {
+                let status = params.row[problem.id]
                 let acTime, errorNumber
                 if (status.is_ac) {
                   acTime = h('span', status.ac_time)
