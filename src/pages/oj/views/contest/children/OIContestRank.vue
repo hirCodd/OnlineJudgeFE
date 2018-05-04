@@ -208,7 +208,7 @@
         problems.forEach(problem => {
           this.columns.push({
             align: 'center',
-            key: problem._id,
+            key: problem.id,
             renderHeader: (h, params) => {
               return h('a', {
                 'class': {

@@ -19,7 +19,7 @@ export const m = {
   Right_Column_Problems: '问题',
   Right_Column_Announcements: '公告',
   Right_Column_Submissions: '提交',
-  Right_Column_Rankings: 'Rankings',
+  Right_Column_Rankings: 'Ranking',
   View_Contest: '查看考试',
   Submitted_Successfully: '提交成功',
   SolvedProblem: '您已经解决了这个问题',
