@@ -27,10 +27,6 @@
       <ECharts :options="options" ref="chart" auto-resize></ECharts>
     </div>
     <Table ref="tableRank" class="auto-resize" :columns="columns" :data="dataRank" disabled-hover></Table>
-    <center>
-      <Button class="downloaddata" type="ghost" size="large" shape="circle" @click="exportData(1)"><Icon type="ios-download-outline"></Icon> {{$t('m.Export_Source_Data')}}</Button>
-    </center>
-    <br>
     <Pagination :total="total"
                 :page-size.sync="limit"
                 :current.sync="page"
@@ -175,13 +171,6 @@
     },
     methods: {
       ...mapActions(['getContestProblems']),
-      exportData (type) {
-        if (type === 1) {
-          this.$refs.tableRank.exportCsv({
-            filename: 'origin data'
-          })
-        }
-      },
       applyToChart (rankData) {
         let [usernames, scores] = [[], []]
         rankData.forEach(ele => {
