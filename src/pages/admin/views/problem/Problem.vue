@@ -110,13 +110,22 @@
               </el-button>
               <el-row :gutter="20">
                 <el-col :span="12">
-                  <el-form-item prop="sample_input" :label="$t('m.Input_Samples')" required>
-                    <Simditor v-model="sample.input"></Simditor>
-                  </el-form-item>
+                  <el-form-item :label="$t('m.Input_Samples')" required>	+                  
+                    <el-input	+                    
+                      :rows="5"	
+                      type="textarea"	
+                      :placeholder="$t('m.Input_Samples')"	
+                      v-model="sample.input">	
+                    </el-input>
                 </el-col>
                 <el-col :span="12">
-                  <el-form-item prop="sample_output" :label="$t('m.Output_Samples')" required>
-                    <Simditor v-model="sample.output"></Simditor>
+                  <el-form-item :label="$t('m.Output_Samples')" required>	+                  
+                    <el-input	+                    
+                      :rows="5"	
+                      type="textarea"	
+                      :placeholder="$t('m.Output_Samples')"	
+                      v-model="sample.output">	
+                    </el-input>
                   </el-form-item>
                 </el-col>
               </el-row>

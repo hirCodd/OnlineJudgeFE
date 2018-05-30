@@ -25,11 +25,11 @@
                     <Icon type="clipboard"></Icon>
                   </a>
                 </p>
-                <pre v-html="sample.input"></pre>
+                <pre>{{sample.input}}</pre>
               </div>
               <div class="sample-output">
                 <p class="title">{{$t('m.Sample_Output')}} {{index + 1}}</p>
-                <pre v-html="sample.output"></pre>
+                <pre>{{sample.output}}</pre>
               </div>
             </div>
           </div>
