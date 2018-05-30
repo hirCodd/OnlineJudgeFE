@@ -110,22 +110,22 @@
               </el-button>
               <el-row :gutter="20">
                 <el-col :span="12">
-                  <el-form-item :label="$t('m.Input_Samples')" required>	+                  
-                    <el-input	+                    
-                      :rows="5"	
-                      type="textarea"	
-                      :placeholder="$t('m.Input_Samples')"	
-                      v-model="sample.input">	
+                  <el-form-item :label="$t('m.Input_Samples')" required>
+                    <el-input
+                      :rows="5"
+                      type="textarea"
+                      :placeholder="$t('m.Input_Samples')"
+                      v-model="sample.input">
                     </el-input>
                   </el-form-item>
                 </el-col>
                 <el-col :span="12">
-                  <el-form-item :label="$t('m.Output_Samples')" required>	+                  
-                    <el-input	+                    
-                      :rows="5"	
-                      type="textarea"	
-                      :placeholder="$t('m.Output_Samples')"	
-                      v-model="sample.output">	
+                  <el-form-item :label="$t('m.Output_Samples')" required>
+                    <el-input
+                      :rows="5"
+                      type="textarea"
+                      :placeholder="$t('m.Output_Samples')"
+                      v-model="sample.output">
                     </el-input>
                   </el-form-item>
                 </el-col>
